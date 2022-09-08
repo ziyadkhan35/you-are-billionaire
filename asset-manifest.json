@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/you-are-billionaire/static/css/main.7adcdac6.css",
+    "main.js": "/you-are-billionaire/static/js/main.ca205d4a.js",
+    "static/js/787.1ede17bd.chunk.js": "/you-are-billionaire/static/js/787.1ede17bd.chunk.js",
+    "index.html": "/you-are-billionaire/index.html",
+    "main.7adcdac6.css.map": "/you-are-billionaire/static/css/main.7adcdac6.css.map",
+    "main.ca205d4a.js.map": "/you-are-billionaire/static/js/main.ca205d4a.js.map",
+    "787.1ede17bd.chunk.js.map": "/you-are-billionaire/static/js/787.1ede17bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7adcdac6.css",
+    "static/js/main.ca205d4a.js"
+  ]
+}
