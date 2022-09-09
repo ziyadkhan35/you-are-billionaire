@@ -1,15 +1,27 @@
 {
   "files": {
     "main.css": "/you-are-billionaire/static/css/main.7adcdac6.css",
-    "main.js": "/you-are-billionaire/static/js/main.ca205d4a.js",
+    "main.js": "/you-are-billionaire/static/js/main.537c183e.js",
     "static/js/787.1ede17bd.chunk.js": "/you-are-billionaire/static/js/787.1ede17bd.chunk.js",
+    "static/media/img8.jpg": "/you-are-billionaire/static/media/img8.7770a3d5efa6486df807.jpg",
+    "static/media/porsche_911.jpg": "/you-are-billionaire/static/media/porsche_911.71973080556585842006.jpg",
+    "static/media/img10.jpeg": "/you-are-billionaire/static/media/img10.9a1ca411c64c704ebede.jpeg",
+    "static/media/img11.jpg": "/you-are-billionaire/static/media/img11.41221c958c20c03f2f9e.jpg",
+    "static/media/villa-poseidon.jpg": "/you-are-billionaire/static/media/villa-poseidon.4be042b0763848c3c59d.jpg",
+    "static/media/img4.jpg": "/you-are-billionaire/static/media/img4.d43c1494bb52c7a24aae.jpg",
+    "static/media/img7.png": "/you-are-billionaire/static/media/img7.4bb9c23040f9f503b5c9.png",
+    "static/media/img5.jpg": "/you-are-billionaire/static/media/img5.60d18dc0867a6b3ae911.jpg",
+    "static/media/Chevrolet-Corvette.jpg": "/you-are-billionaire/static/media/Chevrolet-Corvette.8d88881aa74606d93ad3.jpg",
+    "static/media/img9.jpg": "/you-are-billionaire/static/media/img9.7d4032d7ecca9f88a6ed.jpg",
+    "static/media/Apple Watch.jpg": "/you-are-billionaire/static/media/Apple Watch.018d7cc50744ed4ac0c4.jpg",
+    "static/media/img6.jpg": "/you-are-billionaire/static/media/img6.0deceb04588498649b18.jpg",
     "index.html": "/you-are-billionaire/index.html",
     "main.7adcdac6.css.map": "/you-are-billionaire/static/css/main.7adcdac6.css.map",
-    "main.ca205d4a.js.map": "/you-are-billionaire/static/js/main.ca205d4a.js.map",
+    "main.537c183e.js.map": "/you-are-billionaire/static/js/main.537c183e.js.map",
     "787.1ede17bd.chunk.js.map": "/you-are-billionaire/static/js/787.1ede17bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7adcdac6.css",
-    "static/js/main.ca205d4a.js"
+    "static/js/main.537c183e.js"
   ]
 }
