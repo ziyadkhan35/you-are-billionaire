@@ -16,8 +16,8 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="https://ziyadkhan35.github.io/you-are-billionaire/#/basket" element={<Basket />} />
-        <Route path="https://ziyadkhan35.github.io/you-are-billionaire/#/about-us" element={<About />} />
+        <Route path="#/basket" element={<Basket />} />
+        <Route path="#/about-us" element={<About />} />
       </Routes>
       <Footer/>
     </div>
