@@ -55,7 +55,7 @@ const Header = () => {
             navbarScroll
           >
             <Nav.Link href="/" to="/">Home</Nav.Link>
-            <Nav.Link href='/basket'>Basket</Nav.Link>
+            <Nav.Link href='basket'>Basket</Nav.Link>
             <NavDropdown title="Catagory" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/cars">Cars</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -69,7 +69,7 @@ const Header = () => {
                 Suits
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/about-us">About Us</Nav.Link>
+            <Nav.Link href="about-us">About Us</Nav.Link>
           </Nav>
 
           <Navbar.Text className='me-4'>
