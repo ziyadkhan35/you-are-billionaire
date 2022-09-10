@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './modules/store';
 import { getTotals } from './redux/basketSlice';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {HashRouter} from 'react-router-dom'
 
 
 store.dispatch(getTotals());
@@ -15,9 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
+      <HashRouter>
         <App/>
-      </Router>
+      </HashRouter>
     </Provider>
   </React.StrictMode>
 );
