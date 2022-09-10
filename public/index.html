@@ -41,7 +41,12 @@
     <div id="root"></div>
     
     <script>
-      window.location.href = '/static-dynamic-routing/#' + window.location.pathname.replace('/static-dynamic-routing', '')
+      if (window.location.hash.length > 1) {
+        const path = window.location.hash.replace('#', '')
+        history.pushState({ page: 1 }, "Some title", '/static-dynamic-routing' + path)
+  
+        document.getElementById('header').innerHTML = document.getElementById('header').innerHTML.replace('{PATH}', path)
+      }
     </script>
   </body>
 </html>
