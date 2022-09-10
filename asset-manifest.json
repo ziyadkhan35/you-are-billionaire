@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/you-are-billionaire/static/css/main.7adcdac6.css",
-    "main.js": "/you-are-billionaire/static/js/main.5a0c25a7.js",
+    "main.js": "/you-are-billionaire/static/js/main.cb85d206.js",
     "static/js/787.1ede17bd.chunk.js": "/you-are-billionaire/static/js/787.1ede17bd.chunk.js",
     "static/media/img8.jpg": "/you-are-billionaire/static/media/img8.7770a3d5efa6486df807.jpg",
     "static/media/porsche_911.jpg": "/you-are-billionaire/static/media/porsche_911.71973080556585842006.jpg",
@@ -17,11 +17,11 @@
     "static/media/img6.jpg": "/you-are-billionaire/static/media/img6.0deceb04588498649b18.jpg",
     "index.html": "/you-are-billionaire/index.html",
     "main.7adcdac6.css.map": "/you-are-billionaire/static/css/main.7adcdac6.css.map",
-    "main.5a0c25a7.js.map": "/you-are-billionaire/static/js/main.5a0c25a7.js.map",
+    "main.cb85d206.js.map": "/you-are-billionaire/static/js/main.cb85d206.js.map",
     "787.1ede17bd.chunk.js.map": "/you-are-billionaire/static/js/787.1ede17bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7adcdac6.css",
-    "static/js/main.5a0c25a7.js"
+    "static/js/main.cb85d206.js"
   ]
 }
