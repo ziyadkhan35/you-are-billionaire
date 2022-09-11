@@ -15,9 +15,9 @@ function App() {
       <ToastContainer/>
       <Header/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="basket" element={<Basket />} />
-        <Route path="about-us" element={<About />} />
+        <Route path="/you-are-billionaire" element={<Home />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/about-us" element={<About />} />
       </Routes>
       <Footer/>
     </div>
