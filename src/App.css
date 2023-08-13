@@ -1,287 +1,259 @@
 html{
-    font-size: 98%;
+    font-size: 62.8%;
 }
 body{
-    background-image: linear-gradient(#16213E,#16213E);
+    background-color: rgb(2, 2, 22);
 }
-                                            /* Product.js */
-
-.product{
-    position: relative;
-    background-color: #0F3460;
+:root{
+    --secondary-color: rgb(99, 27, 158);
+}
+/* CSS for NavbarComp.js */
+.nav-container{
+    display: flex;
+    background-color: rgba(12, 12, 71, 0.938);
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.logo:hover .gala{
     color: aliceblue;
 }
-.product-image:nth-child(1){
-    max-width: 70%;
+
+.logo{
+    letter-spacing: 1px;
+    font-size: large;
+    color: aliceblue;
 }
-.product-second-items{
-    padding: 2%;
+.logo .gala{
+    margin-right: 2px;
+    color: rgb(174, 102, 233);
+    transition-duration: .4s;
 }
-.product-first-items{
-    margin-top: 5px;
+.nav-link{
+    list-style: none;
+    color: #f0f8ff;
+    font-size: 1.8rem;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1)  .4s;
 }
-.total{
-    margin-top: 130px;
+.nav-link:hover{
+    color: rgb(174, 102, 233);
+}
+.nav-link:focus{
+    background-color: var(--secondary-color);
+    color: aliceblue;
+    border-radius: 5px;
+}
+.srch-input{
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.srch-btn{
+    font-size: medium;
+    border: 1px solid #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+    color: #95969e;
+    font-weight: bolder;
 }
 
-                                             /* Header.js */
-
-.navbar{
-    background-color: #133B5C;
-    color:lavenderblush
-}
-                                            /* About Money */
-.money{
-    position: absolute;
-    left: 50%;
-    top: 70px;
-    transform: translateX(-50%);
-    font-weight: bold;
-}
-.mny{
-    color: #9ED2C6;
-    letter-spacing: .1rem;
-    font-weight: 400;
-}
-.money-all{
+/* CSS for MainComp.js */
+.movie-container{
+    margin: 100px auto;
+    width: 80%;
     display: flex;
-    flex-wrap: nowrap;
-}
-@media screen and (min-width: 768px){
-    .total{
-        margin-top: 160px;
-    }
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-                                                /* Header.js (Basket-icon) */
-.navbar{
+/* CSS for CardComp.js */
+.movie{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    width: 200px;
+    margin: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
     position: relative;
 }
-.nav-bag{
-    display: flex;
-    align-items: center;
+.movie:hover .poster{
+    opacity: 0.6;
 }
-.bag-quantity   {
+.movie:hover .play{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25px;
-    width: 25px;
-    background-color: #F2DF3A;
+}
+.play{
+    display: none;
     border-radius: 50%;
-    font-size: 14px;
-    font-weight: 700;
-    color: black;
-    margin-left: 4px;
-}
-.bag-icon{
-    color: #A5C9CA;
-}
-
-@media screen and (min-width: 1200px){
-    .basket-icon{
-        position: fixed;
-        right: 550px;
-    }
-}
-@media screen and (min-width: 576px) and (max-width: 1200px){
-    .basket-icon{
-        position: fixed;
-        right: 100px;
-        top: 14px;
-    }
-}
-@media screen and (min-width: 300px) and (max-width: 576px){
-    .basket-icon{
-        position: fixed;
-        right: 90px;
-        top: 14px;
-    }
-}
-@media screen and (max-width: 300px){
-    .basket-icon{
-        position: fixed;
-        right: 75px;
-        top: 14px;
-    }
-}
-                                        /* about-us.js */
-
-
-@media screen and (min-width: 576px){
-.about{
-    margin-top: 150px;
-}
-}
-@media screen and (min-width: 300px) and (max-width: 576px){
-    .about{
-        margin-top: 140px;
-    }
-    .about-p{
-        font-size: 16px;
-    }
-}   
-@media screen and (max-width: 300px){
-    .about{
-        margin-top: 130px;
-    }
-    .about-p{
-        font-size: 14px;
-    }
-} 
-.about-header{
-    color: #E1FFEE;
-}                               
-.about-p{
-    color: #F5EDDC;
-}            
-
-
-                                                     /* Basket.js */
-
-.basket-container{
     position: absolute;
-    bottom: 10px;
+    font-size: 1.3rem;
+    left: 50%;
+    top: 40%;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    color: #fff;
 }
-.basket-text{
-    margin-top: 70px;
-    color: #FBDF07;
-    letter-spacing: 4px;
+.movie .poster{
+    width: 100%;
+    height: 270px;
 }
-                                                /* Product.js Basket Form */
-.basket-information-for-home{
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.movie-details .box{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.movie-details .original_language{
     position: absolute;
-    top: 70px;
-    left: 10px;
-    z-index: 10;
+    top: 7px;
+    font-size: 1.8rem;
+    background-color: var(--secondary-color);
+    width: 5rem;
+    color: rgb(238, 234, 234);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px  #e0d8da;
+    box-shadow: 1px 1px .4px var(--secondary-color);
 }
-.basket-info{
-    font-size: 18px;
+.movie-details .release_date{
+    font-size: 1.2rem;
+    color: rgb(127, 50, 190);
 }
-.basket-info-head{
-    color: #9ED2C6;
+.movie-details .title{
+    font-size: 1.8rem;
 }
-@media screen and (max-width: 800px){
-    .basket-info{
-        font-size: 12px;
+.movie-details .overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: #22298f;
+    opacity: 0.9;
+    color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;   
+    overflow-y: auto;
+    transform: translateY(101%);
+}
+.movie-details:hover .overview{
+    transform: translateY(0%);
+}
+.rating{
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}    
+.toggle-btn{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: large;
+    margin-right: 1.5rem;
+}
+.search{
+    display: flex;
+}
+
+/* FooterComp */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: rgba(240, 248, 255, 0.856);
+    font-size: 1.3rem;
+    background-color: rgb(27, 11, 43);
+}
+.foot_head{
+    font-size: 1.9rem;
+}
+.social_link{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+}
+/* Media Quries */
+/* NavbarComp */
+@media screen and (max-width: 900px){
+     .nav{
+        display: none;
+     }
+    .nav-container{
+        justify-content: space-between;
     }
-}
-@media screen and (max-width: 625px){
-    .basket-information-for-home{
-        position: absolute;
-        top: 110px;
-        left: 10px;
-        display: inline-block;
+    .toggle-btn{
+        display: block;
     }
-    .basket-info{
-        margin-left: 5px;
-    }
-}
-@media screen and (min-width: 625px){
-    .basket-information-for-home{
+    .dropdown_menu{
         position: absolute;
         top: 70px;
-        left: 10px;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(64, 31, 97);
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+    }
+    .nav-item{
+        display: block;
     }
 }
-
-                                         /* Light/Dark Mode */
-
-        /* Theme Icon on Navbar(Dark Mode active) */
-    
-.theme-container{
-background-color: #FFFFFF;
-width: 4.7em;
-height: 2.3em;
-border-radius: 10em;
-box-shadow: inset  0 8px 60px rgba(0, 0, 0, .1),
-            inset  0 8px 8px rgba(0, 0, 0, .1),
-            inset  0 -4px -4px rgba(0, 0, 0, .1);
-position: fixed;
-top: 15.2px;
-left: 100px;
-display: flex;
-align-items: center;
-padding: 0 0.5em;
-cursor: pointer;
-caret-color: transparent;
-}
-@media screen and (min-width:1200px) {
-    .theme-container{
-        left: 600px;
+@media screen and (max-width: 480px){
+    .search{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
-@media screen and (min-width:576px) and (max-width:1200px){
-    .theme-container{
-        left: 75px;
+@media screen and (max-width: 555px){
+    .movie-container{
+        width: 100%;
     }
-}
-@media screen and (min-width:300px) and (max-width:576px){
-    .theme-container{
-        left: 55px;
+    .movie{
+        width: 160px;
+        margin: .5rem;
     }
-}
-@media screen and (max-width:300px){
-    .theme-container{
-        left: 50px;
+    .movie .poster{
+        width: 100%;
+        height: 210px;
     }
+    .movie-details .box{
+        padding: .6rem;
+    }
+    .movie-details .original_language{
+        font-size: 1.5rem;
+        width: 4rem;
+    }
+    .movie-details .release_date{
+        font-size: 1rem;
+    }
+    .movie-details .title{
+        font-size: 1.3rem;
+    }  
 }
-
-
-.theme-icon-circle{
-background-color: black;
-height: 1.79em;
-width: 1.79em;
-border-radius: 50%;
-position: absolute;
-box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
-transition: transform .3s ease;
-}
-.theme-icon-container{
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.theme-icon{
-font-size: medium;
-color: #F7F6DC;
-}
-                                            /* Light Mode   */
-
-body.lightmode{
-    background-image: linear-gradient(#FAFDD6,#FAFDD6);
-}
-
-.lightmode .theme-icon-circle{
-    transform: translateX(1.99em);
-    background-color: #92B4EC;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
-}
-.lightmode .theme-icon {
-    color: #F2DF3A;
-}
-.lightmode .product{
-    background-color: #E4E9BE;
-    color: black;
-}
-.lightmode .navbar{
-    background-color: #E4E9BE;
-}
-.lightmode .bag-icon{
-    color: #876445;
-}
-.lightmode .mny{
-    color: #876445;
-}
-.lightmode .basket-info-head{
-    color: #876445;
-}
-.lightmode .basket-info{
-    color: black;
-}
-
-
